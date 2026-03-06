@@ -107,6 +107,6 @@ module.exports = {
         guild.players[userId] = player;
         saveGuild(guildId, guild);
 
-        await interaction.reply({ embeds: [embed] });
+        await interaction.reply({ embeds: [embed], ephemeral: true });
     }
 };

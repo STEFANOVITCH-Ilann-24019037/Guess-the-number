@@ -1,29 +1,46 @@
 # 🎯 Guess the Number
 
-Un jeu de devinette quotidien — chaque jour, un nombre secret entre 1 et 100 est choisi. Trouve-le en le moins d'essais possible !
+Un petit jeu de devinette quotidien fait en HTML, CSS et JavaScript vanilla.
 
 ---
 
-## 🌐 Site Web
+## 🕹️ Comment jouer
 
-Jeu jouable directement dans le navigateur, sans installation. Ouvre simplement `index.html`.
-
-- Nombre du jour unique, sauvegardé via `localStorage`
-- Feedback instantané (trop haut / trop bas) avec historique des essais
-- Design responsive avec animations
-
-**Stack :** HTML5 · CSS3 · JavaScript vanilla · Google Fonts
+1. Chaque jour, le site choisit **un nombre secret entre 1 et 100**
+2. Entre ton estimation dans le champ et appuie sur **Guess** (ou `Entrée`)
+3. Le site te dit si le nombre secret est **plus grand** ou **plus petit**
+4. Continue jusqu'à trouver le bon nombre !
+5. Le nombre change automatiquement le lendemain
 
 ---
 
-## 🤖 Bot Discord
+## ✨ Fonctionnalités
 
-Version Discord du jeu avec classement, stats par joueur et support multi-serveurs.
+- **Nombre du jour** — le même nombre pour tout le monde tout au long de la journée, généré et sauvegardé via `localStorage`
+- **Feedback instantané** — message coloré indiquant si c'est trop bas ou trop haut
+- **Historique des tentatives** — chaque essai est affiché avec une icône ↑ ↓ ✓
+- **Désactivation en cas de victoire** — le jeu se verrouille dès que le nombre est trouvé
+- **Design responsive** — fonctionne sur mobile et desktop
 
-- Commandes : `/guess`, `/stats`, `/leaderboard`, `/info`, `/reset`
-- Nombre quotidien unique par serveur
-- Persistance des données en JSON
+---
 
-**Stack :** Node.js · discord.js v14
+## 🗂️ Structure du projet
 
-> Les instructions d'installation du bot se trouvent dans `discord-bot/`.
+```
+Guess-the-number/
+├── index.html   # Structure de la page
+├── style.css    # Styles et animations
+├── script.js    # Logique du jeu
+└── README.md
+```
+
+---
+
+## 🛠️ Technologies
+
+| Technologie       | Utilisation                       |
+| ----------------- | --------------------------------- |
+| HTML5             | Structure de la page              |
+| CSS3              | Styles, animations, glassmorphism |
+| JavaScript (ES6+) | Logique du jeu, localStorage      |
+| Google Fonts      | Police _Space Grotesk_ & _Syne_   |
