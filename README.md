@@ -24,6 +24,14 @@ Un petit jeu de devinette quotidien fait en HTML, CSS et JavaScript vanilla.
 
 ---
 
+# Pour ajouter le Bot 
+
+```
+https://discord.com/api/oauth2/authorize?client_id=1479546949362516239&permissions=18432&scope=bot%20applications.commands
+```
+
+---
+
 ## 🗂️ Structure du projet
 
 ```
